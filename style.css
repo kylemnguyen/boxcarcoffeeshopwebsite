@@ -728,7 +728,7 @@ html, body {
 
 
 /* Responsive: stack vertically on small screens */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .banner-text p {
     display: none;
   }
