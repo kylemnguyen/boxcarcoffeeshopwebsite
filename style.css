@@ -481,6 +481,7 @@ html, body {
   #footer {
     display: flex;
     justify-content: space-between;
+    /* justify-content: ; */
     align-items: center;
     padding: 2rem;
     background-color: var(--black);
@@ -782,7 +783,20 @@ html, body {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
+  .nav-links a {
+    font-size: 2rem;
+  }
+
+  .site-header {
+    height: 150px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .dropdown {
+    font-size: 2rem;
+  }
   .menu-info {
 
     flex-wrap: wrap;
@@ -819,6 +833,9 @@ html, body {
   .menu-desc1 {
     margin: auto;
   }
+}
+
+@media (max-width: 1200px) {
 
   .display-img {
     width: 100%;
@@ -861,5 +878,31 @@ html, body {
   }
   .feature-text {
     width: 80%;
+  }
+}
+
+@media (max-width: 1500px) {
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer > div:first-child {
+    order: 2; /* text goes on top */
+    flex: none;
+    width: 100%;
+  }
+
+  #footer > div:last-child {
+    order: 1; /* logo goes on bottom */
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  #footer h1,
+  #footer a,
+  #footer p {
+    font-size: 1.5rem; /* slightly larger for readability */
+    line-height: 1.6;
   }
 }
